@@ -1,0 +1,12 @@
+{
+  "name": "Neo4j Graph Environment",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "neo4j",
+  "forwardPorts": [7474, 7687],
+  "portsAttributes": {
+    "7474": {
+      "label": "Neo4j Browser",
+      "onAutoForward": "openPreview"
+    }
+  }
+}
